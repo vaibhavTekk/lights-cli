@@ -2,15 +2,14 @@ from simplejson import load
 from tuya_connector import TuyaOpenAPI , TUYA_LOGGER
 import typer
 from typing import Optional
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
 
-ACCESS_ID = os.getenv("ACCESS_ID")
-ACCESS_KEY = os.getenv("ACCESS_KEY")
-API_ENDPOINT = os.getenv("API_ENDPOINT")
-DEVICE_ID = os.getenv("DEVICE_ID")
+# CHANGE THESE VALUES ACCORDING TO YOUR DEVICE
+# ACCESS_ID = "ACCESSID"
+# ACCESS_KEY = "ACCESS_KEY"
+# API_ENDPOINT = "https://openapi.tuyain.com"
+# DEVICE_ID ="DEVICE_ID"
 
 app = typer.Typer()
 
